@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <robot>
   <gazebo>
-    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+    <!--plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
       <robotNamespace>/</robotNamespace>
-    </plugin>
+    </plugin-->
 
     <plugin name="ridgeback_ros_force_based_move" filename="libridgeback_ros_force_based_move.so">
       <robotNamespace>/</robotNamespace>
@@ -14,7 +14,7 @@
       <robotBaseFrame>base_link</robotBaseFrame>
       <cmdVelTimeOut>0.25</cmdVelTimeOut>
       <!-- Don't publish a transform: the controller does it. -->
-      <publishOdometryTf>0</publishOdometryTf>
+      <publishOdometryTf>1</publishOdometryTf>
       <yaw_velocity_p_gain>500.0</yaw_velocity_p_gain>
       <x_velocity_p_gain>10000.0</x_velocity_p_gain>
       <y_velocity_p_gain>10000.0</y_velocity_p_gain>
